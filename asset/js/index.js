@@ -4,11 +4,6 @@ function addtask(task){
    todos.push(task);
 }
 
-addtask("acheter dentifrice");
-addtask("acheter du savon");
-addtask("appeler mamie");
-addtask("Allez voir papy");
-
 function removetask(index){
     if(index >= todos.length){
         return false;
@@ -26,7 +21,7 @@ function readtask(index){
 }
 
 function taskToString(task, index){
-    return '<div id="todo">'+ task + '<button id="suppr" type="remove" onclick="removeHandler('+index+')">'+'X'+'</button>'+'</div>';
+    return '<div id="todo"  >'+ task+ '<button id="suppr" class="ms-2" type="remove" onclick="removeHandler('+index+')">'+'X'+'</button>'+'</div>';
 }
 
 function todoToString(){
